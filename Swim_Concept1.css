@@ -1,0 +1,399 @@
+.fondo2{
+    margin-bottom: 56rem;
+    height: 55em;
+    max-width: 100%;
+}
+.fondo-img{
+    width: 100%;
+    height: 60em;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 3;
+}
+.fondo-img::selection{
+    background-color: var(--purple_shadow);
+}
+.fondo2 article{
+    position: relative;
+    align-content: center;
+    text-align:center;
+    height: 100%;
+    z-index: 4;
+}
+.imgen,.imgen1 {
+    margin-bottom: 3rem ;
+}
+.imgen::selection,.imgen1::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+.imgen:hover,.imgen1:hover{
+    transition: all 2s;
+    cursor: pointer; 
+    filter: contrast(1000);
+}
+.imgen:hover{
+    width: 5.5em;
+    height: 9.5em; 
+}
+.imgen1:hover{
+    width: 6.5em;
+    height: 6.5em;
+}
+.fondo2 div p {
+    font-size: 2em;
+    font-weight:var(--rgl) ;
+}
+.fondo2 div p::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+.fondo2 div h1{
+    font-size: 2em;
+    font-weight: var(--bld);
+} 
+.fondo2 div h1::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+.fondo2_1{
+    background-color:var(--purple);
+    padding: 0 1.5rem;
+    height: 90em;
+    width: 100%;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+}
+.fondo2_2{
+    width: 100%;
+    position: relative;
+    top: 25em;
+    height: 68em;
+    z-index: 5;
+}
+.fondo2_2::selection{
+    background-color: var(--cyan);
+}
+.titulo{
+    color: var(--white);
+    font-size: 3em;
+    font-weight: var(--bld);
+    display: table;
+    position: relative;
+    bottom: 23em;
+    margin: 4rem auto;
+    z-index: 4;
+    letter-spacing: 0.25em;
+}
+.titulo::selection{
+    color: var(--black);
+    background-color: var(--cyan);
+}
+.lista-img{
+    position: relative;
+    bottom: 40rem;
+}
+.lista-img img{
+    z-index: 3;
+    margin: auto 4.7em;
+    box-shadow:-2em -2em var(--cyan);
+}
+.lista-img img::selection{
+    background-color: var(--purple_shadow);
+}
+.lista{
+    position: absolute; 
+    z-index: 6;
+    width: 100%;
+    top: 112rem;
+}
+.lista li{
+    width: auto;
+    padding: 0;
+    list-style: none;
+    text-align:start;
+    margin:auto 5rem;
+}
+.lista h2{
+    letter-spacing: 0.25em;
+    font-size: 2.4em;
+    font-weight: var(--bld);
+    color: var(--cyan);
+    margin: 1.5rem 0;
+    z-index: 10;
+}
+.lista h2::selection{
+    color: var(--black);
+    background-color: var(--purple_shadow);
+}
+.lista p{
+    color: var(--white);
+    font-size: 2em;
+    font-weight: var(--rgl);
+    line-height: 1.5em;
+}
+.lista p::selection{
+    color: var(--black);
+    background-color: var(--cyan);
+}
+.lista .boton:hover{
+    transition: all 2s;
+    background-color: var(--purple_shadow);
+    color: var(--cyan);
+}
+.lista .boton:focus{
+    background-color: var(--cyan);
+    color: var(--black);
+}
+.lista .boton::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+@media screen and (min-width: 800px) and (max-width: 1160px){
+    .fondo2{
+        margin-bottom: 75rem;
+    }
+    .fondo2_1{
+        height: 120em;
+    }
+    .fondo2_2{
+        top: 56em;
+    }
+    .lista-img {
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 44rem;
+        margin-left: 15vw;
+    }
+    .lista-img img {
+        margin: 3rem 4.7em;
+    }
+    .lista {
+        display: flex;
+        top: 87rem;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .lista li { 
+        padding: 0;  
+        margin: 3rem 17% 0 0;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 800px){
+    .lista {
+        display: flex;
+        top: 87rem;
+        flex-direction: column;
+    }
+    .lista li {
+        padding: 0;  
+        margin: 2rem 60%;
+    }
+    .lista-img img {
+        margin: 5rem 0.7em;
+        width: 13rem;
+        height: 13rem;
+    }
+    .lista {
+        display: flex;
+        top: 97rem;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: stretch;
+    }
+    .lista h2 {
+        font-size: 2em;     
+        margin: 1.5rem 0;
+    }
+    .lista li {
+        padding: 0;
+        margin: 1rem 0;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 799px){
+    .fondo2 {
+        margin-bottom: 69rem;
+        height: 66em;
+        max-width: 100%;
+    }
+    .fondo2_1{
+        height: 110em;
+    }
+    .fondo2_2 {     
+        top: 46em;
+    }
+    .fondo-img {
+        height: 71em;
+    }
+    .fondo2 article {
+        position: relative;
+        align-content: normal;
+        display: flex;
+        height: 100%;
+    }
+    .lista_art2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lista_art2 img{
+        padding: 0.5rem 2rem;
+        margin-bottom: 0;
+    }
+    .lista-img {
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 44rem;
+        margin-left: 5vw;
+    }
+    .lista-img img {
+        margin: 3rem 4.7em;
+    } 
+}
+@media screen and (min-width: 350px) and (max-width: 499px){
+    .fondo2 {
+        margin-bottom: 52rem;
+        height: 45em;
+        max-width: 100%;
+    }
+    .fondo-img {
+        height: 50em;
+    }
+    .titulo {
+        font-size: 3em;   
+        display: table;
+        position: relative;
+        bottom: 23em;
+        margin: 2rem auto;
+        letter-spacing: 0.25em;
+    }
+    .fondo2 article {
+        position: relative;
+        align-content: flex-start;
+        display: flex;
+        height: 100%;
+        margin: 1rem 0;
+    }
+    .fondo2 div h1, .fondo2 div p {
+        font-size: 1.5em;
+    }
+    .lista_art2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fondo2_1 {
+        height: 82em;
+    }
+    .fondo2_2 {
+        top: 11rem;
+    }
+    .lista-img {
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 45rem;
+        margin-left: 5vw;
+    }
+    .lista-img img {
+        width: 9rem;
+        height: 9rem;
+        margin: 2.5rem 1rem;
+    }
+    .lista {
+        display: flex;
+        top: 70rem;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: stretch;
+    }
+    .lista li {
+        padding: 0;
+        margin: 1rem;
+    }
+    .lista h2 {
+        font-size: 1.5em;
+        margin: 0.5rem 0;
+    }
+    .lista p {
+        font-size: 1.5em;
+        margin: 0.5rem 0;
+        line-height: 1.5em;
+    }
+}
+@media screen and (min-width: 320px)and (max-width: 349px){
+    .fondo2 {
+        margin-bottom: 45rem;   
+        height: 45em;
+        max-width: 100%;
+    }
+    .fondo-img {
+        height: 50em;
+    }
+    .titulo {
+        font-size: 2em;
+        display: table;
+        position: relative;
+        bottom: 35em;
+        margin: 2rem auto;
+        letter-spacing: 0.25em;
+    }
+    .fondo2 article {
+        position: relative;
+        align-content: flex-start;
+        display: flex;
+        height: 100%;
+        margin: 1rem 0;
+    }
+    .fondo2 div h1, .fondo2 div p {
+        font-size: 1.5em;
+    }
+    .lista_art2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fondo2_1 {
+        height: 70em;
+    }
+    .fondo2_2 {
+        top: 4rem;
+    }
+    .lista-img {
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 45rem;
+        margin-left: 5vw;
+    }
+    .lista-img img {
+        width: 7rem;
+        height: 7rem;
+        margin: 2.5rem 1rem;
+    }
+    .lista {
+        display: flex;
+        top: 70rem;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: stretch;
+    }
+    .lista li {
+        padding: 0;
+        margin: 1rem;
+    }
+    .lista h2 {
+        font-size: 1.2em;
+        margin: 0.5rem 0;
+    }
+    .lista p {
+        font-size: 1em;
+        margin: 0.5rem 0;
+        line-height: 1.5em;
+    }
+}

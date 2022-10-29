@@ -1,0 +1,330 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    margin: 0;
+}
+:root{
+    /* colores */
+    --pink:#e550ed; /* -->rosado botones*/
+    --black:#000; /* -->letras*/
+    --white:#fff; /*--> letras*/
+    --cyan:#00dde4; /*-->turqueza de titulos y sombras de img*/
+    --purple:#432e8b; /* -->fondo de algunas partes principales morado*/
+    --purple_shadow:#3d1182; /*-->opacity  de img de fondo morado oscuro*/
+    /* grosor de letras */
+    --bck:900; /* black */
+    --bld:700; /* bold */
+    --sbl:600; /* semibold */
+    --mdm:500; /* medium */
+    --rgl:400; /* regular */
+    --lgh:300; /* ligh */
+}
+.fondo{
+    background-image: url(./img/Fondo1.png);
+    height: 105vh;
+    max-width: 100%;
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fondo1{
+    max-width: 100%;
+    height: 67%;
+    position: absolute;
+    bottom: 5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.fondo1::selection{
+    background-color: var(--cyan);
+}
+.header{      
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header nav{
+    padding: 1.5em;
+}
+.logo_swim{
+    cursor: pointer;
+    margin: 0.5em 5em;
+}
+.logo_swim:hover{
+        transition: all 2s;
+        filter: brightness(30%);
+        margin: 0.5em 5.5em;
+}
+.logo_swim img::selection{
+    background-color: var(--purple);
+}
+.header .nav-link{
+    color: var(--white);
+    font-weight: var(--mdm);    
+    font-size: 2em;
+    padding: 0 1.5rem !important;
+}
+.header .nav-link::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+.header .nav-link:focus{
+    color: var(--purple) ;
+    background-color: var(--cyan);
+    filter: brightness(50%);
+}
+.header .nav-link:hover{
+    transition: all 1s;
+    background-color: var(--white);
+    filter: blur(20%);
+    filter: brightness(70%);
+    color: var(--pink) ;
+    font-size: 2.2em;
+    padding: 0  1.5rem ;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+    position: absolute;
+    top: 25rem;
+}
+.letters{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+.letters h1{
+    color: var(--white);
+    font-size: 5em;
+    font-weight: var(--bck);
+}
+.letters h1::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+.letters h3{
+    color: var(--white);
+    direction: rtl;
+    font-weight: var(--mdm);
+    font-size: 1.2em;
+    letter-spacing: 0.4em;
+    position: absolute;
+    right: -6.5rem;
+    top: 2.5rem;
+    padding: 0 2rem;   
+}
+.letters h3::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+.letters h3:first-line{
+    color: var(--cyan);
+}
+.content p{
+    color: var(--white);
+    width: 27rem;
+    font-size: 2.4em;   
+}
+.content p::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+.boton{
+    background-color: var(--pink);
+    color: var(--white);
+    border: none;
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.6em;
+    font-weight: var(--bld);
+}
+.boton:hover{
+    transition: all 2s;
+    background-color: var(--purple);
+    color: var(--cyan);
+}
+.boton:focus{
+    background-color: var(--purple_shadow);
+    color: var(--black);
+}
+.boton::selection{
+    color: var(--black);
+    background-color: var(--purple);
+}
+@media screen and (min-width: 1150px) and (max-width: 1470px){
+    .letters h1{
+        font-size: 4.5em;
+    }
+    .letters h3{
+        right: -6.5rem;
+        top: 2rem; 
+    }
+    .logo_swim{
+        margin: 0.5em 0em;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1149px){
+    .header .nav-link {
+        font-size: 1.5em;
+        padding: 0 0.7rem !important;
+    }
+    .header .nav-link:hover{     
+        font-size: 1.8em;
+        padding: 0  1rem ;
+    }
+    .navbar .container-fluid{
+        padding: 0;
+    }
+    .logo_swim{
+        margin: 0.5em 2em;
+    }
+    .logo_swim:hover{
+            margin: 0.5em 2.5em;
+    }
+    .header nav{
+        padding: 0%;
+    }   
+    .content{
+        width: 80%;
+    } 
+    .letters h1{
+        font-size: 4em;
+    }
+    .letters h3{
+        right: 0.5rem;
+        top: 2rem;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 767.5px){
+    .fondo1 {
+        height: 54%;
+        bottom: 8rem;   
+    }
+    .navbar{
+        width: 100%;
+        padding: 0;
+        z-index: 3;
+        background: var(--cyan);
+        filter: opacity(0.9);
+    }
+    .navbar-collapse{
+        height: 80vh;
+        background: var(--cyan);
+        filter: opacity(0.9);
+    }
+    .navbar-nav{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header .nav-link {
+        font-size: 2.5em;
+        padding: 1rem 2.5rem !important;
+    }
+    .header .nav-link:hover{     
+        font-size: 2.7em;
+        padding: 1rem 3.5rem;
+    }
+    .letters h3 {      
+        font-size: 0.8em;
+        right: -0.5rem;
+        top: 2rem;
+    }
+    .letters h1 {
+        font-size: 3em;
+    }
+    .content{
+        width: 80%;
+    }
+    .content p{ 
+        width: 15rem;
+        font-size: 2em;
+    }
+    .boton{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.3em;
+       
+    }
+    
+}
+@media screen and (min-width: 320px) and (max-width: 499px){
+    .fondo1 {
+        height: 45%;
+        bottom: 7rem;
+    }
+    .logo_swim{
+        margin: 0.5em 1em;
+    }
+    .logo_swim img{
+        width: 5rem;
+    }
+    .logo_swim:hover{
+        transition: all 2s;
+        filter: brightness(30%);
+        margin: 0.5em 1em;
+    }
+    .navbar{
+        width: 100%;
+        padding: 0;
+        z-index: 3;
+        background: var(--cyan);
+        filter: opacity(0.9);
+    }
+    .navbar-collapse{
+        height: 80vh;
+        background: var(--cyan);
+        filter: opacity(0.9);
+    }
+    .navbar-nav{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header .nav-link{
+        font-size: 1.5em;
+        padding: 1rem 2.5rem !important;
+    }
+    .header .nav-link:hover{     
+        font-size: 2em;
+        padding: 1rem 3.5rem;
+    }
+    .letters h3{
+        font-size: 0.5em;
+        right: -1rem;
+        top: 0.5rem;
+    }
+    .letters h1{
+        font-size: 1.5em;
+    }    
+    .content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 21rem;
+    }
+    .content p{
+        width: 15rem;
+        font-size: 1.5em;
+    }
+    .boton{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.3em;  
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 350px){
+    .boton{
+        width: 9rem;
+        height: 3rem;
+        font-size: 1.3em;  
+    }
+}
